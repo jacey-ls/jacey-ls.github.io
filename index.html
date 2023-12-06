@@ -1,170 +1,175 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <title>Alex Jacey Ligthart-Smith</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<title>Alex Jacey Ligthart-Smith</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://kit.fontawesome.com/52a34cae41.js" crossorigin="anonymous"></script>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    body {font-size: 16px}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+</style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="w3-container w3-theme w3-padding" id="myHeader">
-        <div class="w3-center">
-            <h1 class="w3-xxxlarge w3-animate-bottom">Jacey Ligthart-Smith</h1>
-            <h5><b>E:</b> aj  &bull;  ligthartsmith  at  proton  &bull;  me</h5>
-            <p>
-                <a href="https://www.linkedin.com/in/ajligthartsmith/" target="_blank">LinkedIn</a>
-                &nbsp; &bull; &nbsp;
-                <a href="https://www.researchgate.net/profile/Alex-Ligthart-Smith" target="_blank">ResearchGate</a>
-                <!--&nbsp; &bull; &nbsp;
-                 <a href="https://scholar.google.com/citations?user=PTtY-NEAAAAJ&hl=en" target="_blank">Google Scholar</a> -->
-            </p>
-        </div>  
-    </header>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white" title="Home">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="About">About</a>
+    <a href="#teach" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Teaching">Teaching</a>
+    <a href="#edu" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Education">Education</a>
+    <a href="#proj" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Projects">Projects</a>
+  </div>
 
-    <!-- Tabs -->
-    <div class="w3-border">
-        <div class="w3-bar w3-theme">
-            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'About')">About</button>
-            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Teaching')">Teaching</button>
-            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Education')">Education</button>
-            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Projects')">Projects</button>
-        </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
 
-        <!-- About -->
-        <div id="About" class="w3-container city w3-animate-opacity">
-            <h2>Alex Jacey Ligthart-Smith</h2>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <p> 
-                    I am a Master of Philosophy candidate in the <a href="https://cis.unimelb.edu.au/people/students/alex-jacey-ligthart-smith" target="_blank">School of Computing and Information Systems</a>, Faculty of Engineering and IT, at the University of Melbourne; supervised by <a href="https://oohrimenko.github.io/" target="_blank">A/Prof Olya Ohrimenko</a> and <a href="https://findanexpert.unimelb.edu.au/profile/51117-tony-wirth" target="_blank">Prof Tony Wirth</a>. 
-                    My research is in privacy preserving algorithms.
-                    In particular, my MPhil thesis is about differential privacy for dynamic data. 
-                </p>
-                <p> 
-                    I am also an experienced educator in programming, algorithms and data structures, and theory of computation.
-                </p>
-            </div>
-        </div>
+<!-- Header -->
+<header class="w3-container w3-teal w3-center" style="padding:56px 16px 12px"id="header">
+    <h1 class="w3-margin w3-jumbo">Jacey Ligthart-Smith</h1>
+    <h5><b>E:</b> aj  <span style="color: lightgray"> dot </span>  ligthartsmith  <span style="color: lightgray"> at </span>  proton  <span style="color: lightgray"> dot </span>  me</h5>
+    <div class="w3-xlarge w3-padding-16">
+        <a href="https://www.linkedin.com/in/ajligthartsmith/" target="_blank"><i class="fab fa-linkedin w3-hover-opacity" title="LinkedIn"></i></a>
+        <a href="https://www.researchgate.net/profile/Alex-Ligthart-Smith" target="_blank"><i class="fa-brands fa-researchgate w3-hover-opacity" title="ResearchGate"></i></a>
+    </div>
+</header>
 
-        <!-- Teaching -->
-        <div id="Teaching" class="w3-container city w3-animate-opacity">
-            <h2>Teaching</h2>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <p>
-                    I have been a casual tutor (TA) for the following undergraduate and graduate level subjects in the School of Computing and Information Systems at the University of Melbourne:
-                </p>
-                <ul>
-                    <li><a href="https://handbook.unimelb.edu.au/2021/subjects/comp10002" target="_blank">Foundations of Algorithms (COMP10002)</a>: Tutor, Semester 2, 2019-2020; Head Tutor, Semester 1, 2021</li>
-                    <li><a href="https://handbook.unimelb.edu.au/2021/subjects/comp20007" target="_blank">Design of Algorithms (COMP20007)</a>: Tutor, Semester 1, 2019-2021</li>
-                    <li><a href="https://handbook.unimelb.edu.au/2021/subjects/comp90038" target="_blank">Algorithms and Complexity (COMP90038)</a>: Tutor, Semester 2, 2020 & Semester 1, 2021</li>
-                    <li><a href="https://handbook.unimelb.edu.au/2023/subjects/comp90057" target="_blank">Advanced Theoretical Computer Science (COMP90057)</a>: Head Tutor, Semester 2, 2023</li>
-                </ul> 
-                <p>
-                    In addition to the above university teaching roles, I have also worked as a private tutor in mathematics and computer science, and taught coding to primary (elementary) school aged children at <a href="https://www.codecamp.com.au/" target="_blank">Code Camp</a>. As a new tutor I completed the 8 week Faculty of Engineering and IT Tutor Development Program, and more recently I voluntarily completed the <a href="https://melbourne-cshe.unimelb.edu.au/professional-development/teaching-learning-and-assessment/certificate-in-small-group-teaching" target="_blank">Melbourne Certificate in Small Group Teaching</a>.
-                </p>
-            </div>
-        </div>
+<!-- About -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="about">
+    <div class="w3-content">
+        <h1>Alex Jacey Ligthart-Smith</h1>
 
-        <!-- Education -->
-        <div id="Education" class="w3-container city w3-animate-opacity">
-            <h2>Education</h2>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <div class="w3-container">
-                    <h5><b>Master of Information Technology</b></h5>
-                    <h6 class="w3-text-teal">The University of Melbourne</h6>
-                    <ul>
-                        <li>Computing specialisation</li>
-                        <li>Dean's Honours List</li>
-                    </ul>
-                    <p>
-                        <b>Minor thesis:</b> "<a href="/docs/ajls_minorthesis.pdf" target="_blank">Performance and Security Trade-offs for Data Obliviousness: Towards eﬃcient and secure set intersection</a>"
-                    </p>
-                    <p>
-                        <b>Abstract:</b> Data oblivious algorithms oﬀer a strong guarantee of security against information leakage through external memory access-patterns. 
-                        This security comes with a cost to eﬃciency, with many oblivious algorithms incurring Ω(log n) access overheads, or large constant factors that make them impractical. 
-                        We propose a relaxed deﬁnition of output-constrained obliviousness, suitable when the outputs of computation are to be revealed to an adversary. 
-                        We apply this deﬁnition in the context of set intersection, with promising results under the condition of O(√n) private memory size. 
-                        We also present novel set intersection algorithms that have the potential to provide further eﬃciency improvements with some small probability of privacy
-                        failure.
-                    </p>
-                </div>
-            </div>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <div class="w3-container">
-                    <h5><b>Bachelor of Science</b></h5>
-                    <h6 class="w3-text-teal">La Trobe University</h6>
-                    <ul>
-                        <li>Mathematics and Statistics majors</li>
-                        <li>Co-founder and treasurer of the Mathematics and Statistics Society (LUMSS)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p> 
+            I am a Master of Philosophy candidate in the <a href="https://cis.unimelb.edu.au/people/students/alex-jacey-ligthart-smith" target="_blank">School of Computing and Information Systems</a>, Faculty of Engineering and IT, at the University of Melbourne; supervised by <a href="https://oohrimenko.github.io/" target="_blank">A/Prof Olya Ohrimenko</a> and <a href="https://findanexpert.unimelb.edu.au/profile/51117-tony-wirth" target="_blank">Prof Tony Wirth</a>. 
+            My research is in privacy preserving algorithms.
+            In particular, my MPhil thesis is about differential privacy for dynamic data. 
+        </p>
+        <p> 
+            I am also an experienced educator in programming, algorithms and data structures, and theory of computation.
+        </p>
+    </div>
+</div>
 
-        <!-- Projects -->
-        <div id="Projects" class="w3-container city w3-animate-opacity">
-            <h2>Projects</h2>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <div class="w3-container">
-                    <h5><b>Internship: CRM development</b></h5>
-                    <h6 class="w3-text-teal">The University of Melbourne</h6>
-                    <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr - Dec 2018</h6> -->
-                    <p>As an IT intern in the University of Melbourne Students@Work program, I worked directly with the Strategic Engagement Partnership Manager to develop a reporting framework for place-based engagement strategies.</p>
-                </div> 
-            </div>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <div class="w3-container">
-                    <h5><b>SummerTechLive Studentship: Natural Language Processing</b></h5>
-                    <h6 class="w3-text-teal">The University of Melbourne & Leading Technology Group</h6>
-                    <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2016-17</h6> -->
-                    <p>Research and development project in biomedical natural language processing (NLP), completed on location with an industry partner. Myself and another student, with limited supervision, developed a Java software program, with data extracted using the NCBI E-utilities API, abstracts parsed using the Stanford Parser, and key terms identified using PubTator. The system analysed syntactic dependencies to determine the claims of treatment effects, achieving precision and recall close to the state of the art of similar systems at the time.</p>
-                </div>
-            </div>
-            <div class="w3-panel w3-border-top w3-border-teal">
-                <div class="w3-container">
-                    <h5><b><a href="https://srs.amsi.org.au/" target="_blank">AMSI Vacation Research Scholarship</a>: Theoretical Statistics</b></h5>
-                    <h6 class="w3-text-teal">La Trobe University & The Australian Mathematical Sciences Institute</h6>
-                    <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2015-16</h6> -->
-                    <p>
-                        <b>Research report:</b> "<a href="/docs/Ligthart-Smith_VRS-Report.pdf" target="_blank">A comparison of linear mixed models that include time-varying covariates</a>".</p>
-                    <p>
-                        <b>Abstract:</b> 
-                        Longitudinal studies are  becoming more prevalent, with new technologies providing us with abilities to collect, store, and analyse more data than ever. 
-                        With the wealth of new types of
-                        information available to researchers and analysts, new approached to analysing and modelling these kinds of data must be developed. 
-                        One area where researchers often lack the tools to make the most of their data is where time-varying covariates are present in linear mixed models. 
-                        This paper compares two approaches to this task, one that involves person-mean centring and the other detrending of time-varying covariates, and shows that the person-mean centring approach provides more consistent and precise estimates of the within-eﬀects of these covariates.
-                    </p>
-                </div>
-            </div>
-        </div>
+<!-- Teaching -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="teach">
+    <div class="w3-content">
+        <h1>Teaching</h1>
+        <p>
+            I have been a casual tutor (TA) for the following undergraduate and graduate level subjects in the School of Computing and Information Systems at the University of Melbourne:
+        </p>
+        <ul>
+            <li><a href="https://handbook.unimelb.edu.au/2021/subjects/comp10002" target="_blank">Foundations of Algorithms (COMP10002)</a>: Tutor, Semester 2, 2019-2020; Head Tutor, Semester 1, 2021</li>
+            <li><a href="https://handbook.unimelb.edu.au/2021/subjects/comp20007" target="_blank">Design of Algorithms (COMP20007)</a>: Tutor, Semester 1, 2019-2021</li>
+            <li><a href="https://handbook.unimelb.edu.au/2021/subjects/comp90038" target="_blank">Algorithms and Complexity (COMP90038)</a>: Tutor, Semester 2, 2020 & Semester 1, 2021</li>
+            <li><a href="https://handbook.unimelb.edu.au/2023/subjects/comp90057" target="_blank">Advanced Theoretical Computer Science (COMP90057)</a>: Head Tutor, Semester 2, 2023</li>
+        </ul> 
+        <p>
+            In addition to the above university teaching roles, I have also worked as a private tutor in mathematics and computer science, and taught coding to primary (elementary) school aged children at <a href="https://www.codecamp.com.au/" target="_blank">Code Camp</a>. As a new tutor I completed the 8 week Faculty of Engineering and IT Tutor Development Program, and more recently I voluntarily completed the <a href="https://melbourne-cshe.unimelb.edu.au/professional-development/teaching-learning-and-assessment/certificate-in-small-group-teaching" target="_blank">Melbourne Certificate in Small Group Teaching</a>.
+        </p>
+    </div>
+</div>
 
-    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-    <script>
-        
-        // Tabs
-        function openCity(evt, cityName) {
-        var i;
-        var x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        var activebtn = document.getElementsByClassName("testbtn");
-        for (i = 0; i < x.length; i++) {
-            activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " w3-dark-grey";
-        }
-        
-        var mybtn = document.getElementsByClassName("testbtn")[0];
-        mybtn.click();
-        
-    </script>
+<!-- Education -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="edu">
+    <div class="w3-content">
+        <h1>Education</h1>
+
+        <h5><b>Master of Information Technology</b></h5>
+        <h6 class="w3-text-teal">The University of Melbourne</h6>
+        <ul>
+            <li>Computing specialisation</li>
+            <li>Dean's Honours List</li>
+        </ul>
+        <p>
+            <b>Minor thesis:</b> "<a href="/docs/ajls_minorthesis.pdf" target="_blank">Performance and Security Trade-offs for Data Obliviousness: Towards eﬃcient and secure set intersection</a>"
+        </p>
+        <p>
+            <b>Abstract:</b> Data oblivious algorithms oﬀer a strong guarantee of security against information leakage through external memory access-patterns. 
+            This security comes with a cost to eﬃciency, with many oblivious algorithms incurring Ω(log n) access overheads, or large constant factors that make them impractical. 
+            We propose a relaxed deﬁnition of output-constrained obliviousness, suitable when the outputs of computation are to be revealed to an adversary. 
+            We apply this deﬁnition in the context of set intersection, with promising results under the condition of O(√n) private memory size. 
+            We also present novel set intersection algorithms that have the potential to provide further eﬃciency improvements with some small probability of privacy
+            failure.
+        </p>
+
+        <h5><b>Bachelor of Science</b></h5>
+        <h6 class="w3-text-teal">La Trobe University</h6>
+        <ul>
+            <li>Mathematics and Statistics majors</li>
+            <li>Co-founder and treasurer of the Mathematics and Statistics Society (LUMSS)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Projects -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="proj">
+    <div class="w3-content">
+        <h1>Projects</h1>
+
+        <h5><b>Internship: CRM development</b></h5>
+        <h6 class="w3-text-teal">The University of Melbourne</h6>
+        <p>
+            As an IT intern in the University of Melbourne Students@Work program, I worked directly with the Strategic Engagement Partnership Manager to develop a reporting framework for place-based engagement strategies.
+        </p>
+
+        <h5><b>SummerTechLive Studentship: Natural Language Processing</b></h5>
+        <h6 class="w3-text-teal">The University of Melbourne & Leading Technology Group</h6>
+        <p>
+            Research and development project in biomedical natural language processing (NLP), completed on location with an industry partner. Myself and another student, with limited supervision, developed a Java software program, with data extracted using the NCBI E-utilities API, abstracts parsed using the Stanford Parser, and key terms identified using PubTator. The system analysed syntactic dependencies to determine the claims of treatment effects, achieving precision and recall close to the state of the art of similar systems at the time.
+        </p>
+
+        <h5><b>
+            <a href="https://srs.amsi.org.au/" target="_blank"> AMSI Vacation Research Scholarship</a>: Theoretical Statistics
+        </b></h5>
+        <h6 class="w3-text-teal">
+            La Trobe University & The Australian Mathematical Sciences Institute
+        </h6>
+        <p>
+            <b>Research report:</b> "<a href="/docs/Ligthart-Smith_VRS-Report.pdf" target="_blank">A comparison of linear mixed models that include time-varying covariates</a>".</p>
+        <p>
+            <b>Abstract:</b> 
+            Longitudinal studies are  becoming more prevalent, with new technologies providing us with abilities to collect, store, and analyse more data than ever. 
+            With the wealth of new types of
+            information available to researchers and analysts, new approached to analysing and modelling these kinds of data must be developed. 
+            One area where researchers often lack the tools to make the most of their data is where time-varying covariates are present in linear mixed models. 
+            This paper compares two approaches to this task, one that involves person-mean centring and the other detrending of time-varying covariates, and shows that the person-mean centring approach provides more consistent and precise estimates of the within-eﬀects of these covariates.
+        </p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-64 w3-center w3-opacity">  
+    <h5><b>E:</b> aj  <span style="color: lightgray"> dot </span>  ligthartsmith  <span style="color: lightgray"> at </span>  proton  <span style="color: lightgray"> dot </span>  me</h5>
+    <div class="w3-xlarge w3-padding-16">
+        <a href="https://www.linkedin.com/in/ajligthartsmith/" target="_blank"><i class="fab fa-linkedin w3-hover-opacity" title="LinkedIn"></i></a>
+        <a href="https://www.researchgate.net/profile/Alex-Ligthart-Smith" target="_blank"><i class="fa-brands fa-researchgate w3-hover-opacity" title="ResearchGate"></i></a>
+    </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
